@@ -4,15 +4,18 @@ public class Person {
     private String address;
     private int age;
     private String zipCode;
+    private String sex;
+
 
     public Person() {
     }
 
-    public Person(String name, String address, int age, String zipCode) {
+    public Person(String name, String address, int age, String zipCode, String sex) {
         this.name = name;
         this.address = address;
         this.age = age;
         this.zipCode = zipCode;
+        this.sex = sex;
     }
 
     public String getName() {
@@ -47,6 +50,14 @@ public class Person {
         this.zipCode = zipCode;
     }
 
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -54,7 +65,7 @@ public class Person {
                 ", address='" + address + '\'' +
                 ", age=" + age +
                 ", zipCode='" + zipCode + '\'' +
+                ", sex='" + sex + '\'' +
                 '}';
     }
 }
-
